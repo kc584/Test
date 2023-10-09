@@ -1,0 +1,40 @@
+.bg-1{
+    background-color: #F3F344;
+    color: #FF0000;
+}
+
+.bg-2{
+    background-color: #e9e92f;
+    color: #FF0000;
+}
+
+.bg-3{
+    background-color: #dfdf25;
+    color: #FF0000;
+}
+
+p {
+    font-size: 10px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.static {
+    position:absolute;
+    background: white;
+  }
+  
+.static:hover {
+    opacity:0;
+}
+
+img {
+    border-radius: 50%;
+  }

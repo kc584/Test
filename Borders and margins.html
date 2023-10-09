@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Borders and margins</title>
+
+        <style>
+
+            p.one {
+            border-style: solid;
+            border-width: 5px;
+            }
+
+            p.two {
+            border-style: solid;
+            border-width: medium;
+            }
+
+            p.three {
+            border-style: dotted;
+            border-width: 2px;
+            }
+
+            p.four {
+            border-style: dotted;
+            border-width: thick;
+            }
+
+            p.five {
+                border-style: double;
+                border-width: 15px;
+            }
+
+            p.six {
+                border-style: double;
+                border-width: thick;
+            }
+
+            p.seven {
+                border-style: solid;
+                border-width: 25px 10px 4px 35px;
+            }
+
+            p.eight {
+                border-style: solid;
+                border-width: 30px 10px
+            }
+
+            p.blueviolet {
+                border-style: solid;
+                border-color: blueviolet;
+                border-width: 10px;
+            }
+
+            p.colorsides {
+                border-style: solid;
+                border-width: 10px;
+                border-color: hotpink blue cyan orange
+            }
+
+            p.bordersides {
+                border-top-style: dotted;
+                border-right-style: solid;
+                border-bottom-style:dashed;
+                border-left-style:double;
+            }
+
+            p.border {
+                border: 5px solid red;
+            }
+
+            p.border-bottom {
+                border-bottom: 10px solid blueviolet;
+            }
+
+            p.radius {
+                border: 3px solid black;
+                border-radius: 3px;
+            }
+
+            p.radius1 {
+                border: 3px solid black;
+                border-radius: 6px;
+            }
+
+            p.radius2 {
+                border: 3px solid black;
+                border-radius: 12px;
+            }
+
+            div {
+                border: 1px solid black;
+                margin-top: 100px;
+                margin-right: 150px;
+                margin-bottom: 100px;
+                margin-left: 80px;
+                background-color: lightblue;
+            }
+            
+            p.ex1 {
+                margin-left: inherit;
+                margin-right: 10px;
+            }
+
+            div.ex1 {
+                padding: 20px
+            }
+
+            div.ex2 {
+                padding: 20px 30px 40px 50px
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Borders</h1>
+
+        <p class="one">this is 5px.</p>
+        <br>
+        <p class="two">this is medium.</p>
+        <br>
+        <p class="three">this is 2px and dotted.</p>
+        <br>
+        <p class="four">this is dotted and thick.</p>
+        <br>
+        <p class="five">this is double border and 15px.</p>
+        <br>
+        <p class="six">this is double border and thick.</p>
+        <br>
+        <p class="seven">the order of the border width goes clockwise (up,right,down,left)</p>
+        <br>
+        <p class="eight">but if you only have 2 sides mentioned then it goes top,bottom and left,right</p>
+        <br>
+        <p class="blueviolet">this border is coloured, how nice</p>
+        <br>
+        <p class="colorsides">this border has different colour sides, same as the width it goes in the order up,right,down,left</p>
+        <br>
+        <p class="bordersides">this border has different styles on all sides, different sides can be styles by changing "border-style" to "border-*side*-style" for example, "border-bottom-style"</p>
+        <br>
+        <p class="border">this looks the same as the other borders but the code behind it is far simpler, rather than having to write border-style, border-width, border-color, you can simple write "border: *width* *style* *color*" in this case its "border: 5px solid red;" </p>
+        <br>
+        <p class="border-bottom">by using "border-*side" in this case "border-bottom" you can individually switch any side exactly the same as before</p>
+        <br>
+        <p class="radius">by using "border-radius" you can change how curved the corners of the borders are</p>
+        <br>
+        <p class="radius1">I have increased the radius slightly</p>
+        <br>
+        <p class="radius2">I have increased the radius to the max</p>
+        <br>
+        <hr>
+
+        <h1>Margins</h1>
+        <br>
+        <div>
+            This div element has a top margin of 100px a right margin of 150px, a bottom mragin of 100px and a left margin of 80px
+        </div>
+
+        <div>
+            <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+        </div>
+
+        <div class="ex1">This div has a padding of 20px</div>
+
+        <div class="ex2">This div has a padding of top 20 right 30 bottom 40 and left 50px</div>
+
+        
+
+
+
+    </body>
+
+</html>

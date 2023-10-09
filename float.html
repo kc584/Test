@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Float</title>
+
+        <style>
+            img {
+              float: right;
+            }
+
+            div {
+                border: 3px solid #4CAF50;
+                padding: 5px;
+            }
+
+            .div1 {
+                background: red;
+            }
+
+            .div2 {
+                clear: left;
+                background: yellow;
+            }
+
+            .div3 {
+                background: green;
+                clear: left;
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .img1 {
+                float: right;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .box {
+                float: left;
+                width: 33.33%; 
+                padding: 50px;
+            }
+
+            </style>
+
+    </head>
+
+    <body>
+
+        <h2>Float Right</h2>
+
+        <p><img src="the MOON.jpg" alt="The Moon"
+            style="width:170px; height: 170px; margin-left: 15px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+        </p>
+        <br>
+        <hr>
+        <br>
+        <div class="div1">this should probably be red</div>
+        <div class="div2">this should probably be yellow</div>
+        <div class="div3">this should probably be green</div>
+        <br>
+        <hr>
+        <br>
+        <div class="clearfix"> <img class= "img1" src="the MOON.jpg" alt="The Moon"
+            style="width:170px; height: 170px; margin-left: 15px;"> this should have an image to the right</div>
+        <br>
+        <hr>
+        <br>
+        
+        <div class="box" style="background-color:#bbb">
+        <p>this is some text in a box</p>
+        </div>
+
+        <div class="box" style="background-color:#ccc">
+        <p>text in a box</p>
+        </div>
+
+        <div class="box" style="background-color:#ddd">
+        <p>box tht has text in it</p>
+        </div>
+
+    </body>
+
+</html>

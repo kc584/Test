@@ -1,0 +1,43 @@
+.centered {
+    text-align: center;
+}
+
+h1 {
+    top: 0px;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+ol {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+li {
+    font-size: 30px;
+}
+
+
+b {
+    font-size: 30px;
+}
+
+
+i {
+    font-size: 30px;
+}
+
+
+div {
+    font-size: 20px;
+}
+
+ol {
+    list-style-position:inside
+  }

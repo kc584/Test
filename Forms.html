@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=#, initial-scale=1.0">
+        <title>HTML Form Structure</title>
+
+    </head>
+
+    <body>
+        <form action = "#" method="get">
+
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name ="lastname"><br>
+            Username:<br>
+            <input type="text" name ="Username"><br>
+            Password:<br>
+            <input type="password" name="password"><br>
+
+            <p>Please select your favourite type of film:
+                <br />
+                <input type="radio" name="film" value="action" /> Action
+                <input type="radio" name="film" value="Horror" /> Horror
+                <input type="radio" name="film" value="rom com" /> Rom Com
+                <input type="radio" name="film" value="thriller"/> Thriller
+            </p>
+
+            <p>Where do you watch these films?
+                <br />
+                <input type="checkbox" name="location" value="At home" /> At home
+                <input type="checkbox" name="location" value="Cinema" /> Cinema
+                <input type="checkbox" name="location" value="Friends house" /> Friends house
+                <input type="checkbox" name="location" value="Moblie device" /> Mobile device
+            </p>
+
+            <p>What device do you listen to the movies on?
+
+                <select name="devices">
+                    <option value="Earbuds">Earbuds</option>
+                    <option value="Speakers">Speakers</option>
+                    <option value="Headphones">Headphones</option>
+                    <option value="Other">Other</option>
+                </select>
+                
+            </p>
+
+            <p>
+                <input type="submit" name="submit" value="Enter my details" />
+            </p>
+
+        </form>
+
+    </body>
+
+</html>
